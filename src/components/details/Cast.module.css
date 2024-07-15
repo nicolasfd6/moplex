@@ -1,0 +1,93 @@
+.CastContainer {
+   margin-top: 1rem;
+   position: relative;
+}
+.heading {
+   display: flex;
+   justify-content: space-between;
+   vertical-align: middle;
+}
+.scrollButtons {
+   display: flex;
+}
+.scrollButtons svg {
+   padding: 0.2rem 0.4rem;
+   color: var(--text-color);
+   cursor: pointer;
+   border-radius: 4px;
+   transition: 0.3s ease;
+}
+.scrollButtons svg:hover {
+   background-color: var(--light-bg-color);
+}
+.title {
+   font-weight: 500;
+   font-size: var(--text-large);
+}
+.castGrid {
+   display: flex;
+   gap: 20px;
+   overflow-x: scroll;
+   white-space: nowrap;
+   padding: 0.8rem 0;
+   scrollbar-width: none; 
+   -ms-overflow-style: none; 
+   overflow: -moz-scrollbars-none;
+}
+
+.castCard {
+   background: var(--light-bg-color);
+   border: 2px solid var(--light-bg-color);
+}
+.castCardSkeleton,
+.castCard{
+   width: 100px !important;
+   height: 135px;
+   border-radius: 8px;
+   object-fit: cover;
+}
+.castCardImgBox {
+   width: 100px !important;
+   height: 71%;
+}
+.castCardImgBox img {
+   width: 100%;
+   height: 100%;
+   border-top-left-radius: 8px;
+   border-top-right-radius: 8px;
+}
+.castInfo {
+   width: 100px;
+   white-space: nowrap;
+   padding: 0.1rem 0.2rem;
+}
+.actorCharacter {
+   color: var(--text-secundary-color);
+   font-size: var(--text-small);
+   position: relative;
+   transform: translateY(-6px);
+}
+.actorName,
+.actorCharacter {
+   overflow: hidden;
+   text-overflow: ellipsis;
+}
+/* .shadow {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 105%;
+   height: 100%;
+   background-image: linear-gradient(
+      90deg,
+      transparent 50%,
+      var(--bg-color) 100%
+   );
+   pointer-events: none;
+}
+ */
+@media (max-width: 768px) {
+  .scrollButtons {
+    display: none;
+  }
+}

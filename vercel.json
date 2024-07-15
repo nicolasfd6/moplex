@@ -1,0 +1,11 @@
+{
+   "rewrites": [
+      {"source": "/(.*)", "destination": "/"},
+      {"source": "/movies", "destination": "/movies"},
+      {"source": "/movie", "destination": "/movie"},
+      {"source": "/serie", "destination": "/serie"},
+      {"source": "/series", "destination": "/series"},
+      {"source": "/search", "destination": "/search"},
+      {"source": "/categories", "destination": "/categories"}
+   ]
+}

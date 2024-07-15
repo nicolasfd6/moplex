@@ -1,0 +1,50 @@
+.container {
+   position: absolute;
+   top: 60px;
+   left: 16.4rem;
+   width: calc(100% - 16.4rem);
+}
+
+.spacing {
+   width: 75%;
+   margin: 0 auto;
+   padding-left: 2.5%;
+   padding-right: 2.5%;
+}
+
+@media (max-width: 767px) {
+   .spacing {
+      width: 95%;
+      padding-left: 2%;
+      padding-right: 2%;
+   }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+   .spacing {
+      width: 80%;
+      padding-left: 5%;
+      padding-right: 5%;
+   }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+   .spacing {
+      width: 75%;
+      padding-left: 7.5%;
+      padding-right: 7.5%;
+   }
+}
+@media (min-width: 960px) and (max-width: 1024px) {
+   .container {
+      left: 14.4rem;
+      width: calc(100% - 14.4rem);
+   }
+}
+
+@media (max-width: 768px) {
+   .container {
+      left: 0;
+      width: 100%;
+   }
+}

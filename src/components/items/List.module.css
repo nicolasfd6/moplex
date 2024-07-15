@@ -1,0 +1,64 @@
+.list {
+   margin: 1.8rem 0 5.5rem 0;
+}
+.title {
+   font-weight: 500;
+   font-size: var(--text-large);
+}
+.listHeading {
+   display: flex;
+   justify-content: space-between;
+}
+.listHeadingTitle {
+   display: flex;
+   flex-direction: row;
+   gap: 8px;
+   vertical-align: middle;
+}
+.listHeadingFag {
+   width: 8px;
+   height: 100%;
+   background: var(--main-color);
+   border-radius: 10px;
+   display: flex;
+}
+.pathLink {
+   display: flex;
+   align-items: center;
+   vertical-align: middle;
+   color: var(--text-color);
+   transition: 0.2s ease;
+   gap: 4px;
+}
+.pathLink:hover {
+   color: var(--main-color);
+}
+.pathLink:hover ~ svg {
+   transform: translateX(-8px);
+}
+.listGrid {
+   margin-top: 1rem;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(128px, 1fr));
+   row-gap: 50px;
+   column-gap: 13px !important;
+}
+
+@media (max-width: 768px) {
+  .list {
+    margin: 3rem 0;
+  }
+   .listGrid {
+      column-gap: none;
+      display: flex;
+      flex-direction: row;
+      grid-template-columns: none;
+      row-gap: 0;
+      column-gap: 0;
+      gap: 15px;
+      overflow-x: scroll;
+      white-space: nowrap;
+      height: 230px;
+      padding-bottom: 1rem;
+   }
+}

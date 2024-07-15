@@ -1,0 +1,99 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-shadow: border-box;
+   text-size-adjust: none;
+   -webkit-text-size-adjust: none;
+}
+:root {
+   /* Colors */
+   --main-color: #e50914;
+   --text-color: #fff;
+   --text-secundary-color: #bababa;
+   --bg-color: #100f12;
+   --light-bg-color: #18181A;
+
+   /* Text sizes */
+   --text-small: 0.8rem;
+   --text-medium: 1rem;
+   --text-large: 1.2rem;
+   --text-ultra: 1.8rem;
+}
+html::-webkit-scrollbar {
+   width: 0.5rem;
+   background: var(--light-bg-color);
+}
+html::-webkit-scrollbar-thumb,
+html::-webkit-scrollbar-track
+{
+   background: var(--main-color);
+   border-radius: 10px;
+}
+body,
+html {
+   font-family: "Poppins", sans-serif;
+   background-color: var(--bg-color);
+   color: var(--text-color);
+}
+
+a {
+   text-decoration: none;
+   color: var(--text-color);
+}
+
+img:not(#playIcon) {
+   background-color: var(--light-bg-color);
+}
+
+ol,
+ul {
+   list-style: none;
+}
+
+input,
+textarea {
+   color: var(--text-color);
+   font-size: var(--text-medium);
+   font-family: "Poppins", Sans-Serif;
+}
+
+strong {
+   font-weight: 500;
+   align-items: center;
+   vertical-align: middle;
+   display: flex;
+}
+strong svg {
+   margin-right: 4px;
+}
+.title {
+   display: flex;
+   flex-direction: row;
+   gap: 8px;
+   vertical-align: middle;
+}
+.listHeadingFag {
+   width: 7px;
+   height: 100%;
+   background: var(--main-color);
+   border-radius: 8px;
+   display: flex;
+   color: var(--main-color);
+   pointer-events: none;
+}
+.detailsContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+.hideScrollBar::-webkit-scrollbar,
+.hideScrollBar::-webkit-scrollbar-thumb,
+.hideScrollBar::-webkit-scrollbar-track{
+   background: transparent;
+}
+.searchBarShown {
+   display: flex;
+}
+.selected {
+   color: var(--main-color);
+}
